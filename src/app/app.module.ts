@@ -1,3 +1,4 @@
+import { ShoppingListService } from './../services/shopping-list';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -40,6 +41,7 @@ import { EditRecipePage } from './../pages/edit-recipe/edit-recipe';
   providers: [
     StatusBar,
     SplashScreen,
+    ShoppingListService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
