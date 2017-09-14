@@ -22,7 +22,7 @@ export class ShoppingListPage {
 
   onRemoveItem(index: number) {
     this.shoppingListService.removeItem(index);
-    this.loadItems;
+    this.loadItems();
   }
 
   ionViewWillEnter() {
