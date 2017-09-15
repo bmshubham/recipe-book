@@ -107,6 +107,7 @@ export class EditRecipePage implements OnInit {
 
   onSubmit() {
     const recipe = this.recipeForm.value;
+    console.log(recipe);
     let ingredients =[];
     if (recipe.ingredients.length > 0) {
       ingredients = recipe.ingredients.map(name => {
